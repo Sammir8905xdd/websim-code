@@ -1,0 +1,35 @@
+{
+  "name": "websim-syntax-and-icons",
+  "displayName": "WebSim Script Syntax and Icons",
+  "description": "Resaltado de sintaxis y tema de íconos para WebSim Script (.wss).",
+  "version": "1.0.0",
+  "publisher": "orangy_dev",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Programming Languages", "Themes"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "websim",
+        "aliases": ["WebSim Script", "websim"],
+        "extensions": [".wss"],
+        "configuration": "syntaxes/language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "websim",
+        "scopeName": "source.websim",
+        "path": "syntaxes/websim.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "websim-theme",
+        "label": "WebSim Icon Theme",
+        "path": "icons/websim-icon-theme.json"
+      }
+    ]
+  }
+}
