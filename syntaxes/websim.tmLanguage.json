@@ -1,0 +1,55 @@
+{
+  "scopeName": "source.websim",
+  "patterns": [
+    {
+      "name": "keyword.control.websim",
+      "match": "\\b(websim\\.print|websim\\.if|websim\\.var|websim\\.for|websim\\.while)\\b"
+    },
+    {
+      "name": "string.quoted.single.websim",
+      "match": "'([^']*)'"
+    },
+    {
+      "name": "string.quoted.double.websim",
+      "match": "\"([^\"]*)\""
+    },
+    {
+      "name": "variable.assignment.websim",
+      "match": "\\b\\w+\\s*=\\s*[^\\s]+"
+    },
+    {
+      "name": "entity.name.tag.websim",
+      "match": "<websim\\.\\w+>.*?</websim\\.\\w+>"
+    },
+    {
+      "name": "comment.block.websim",
+      "match": "\\/\\*[^*]*\\*+(?:[^*\\/][^*]*\\*+)*\\/"
+    },
+    {
+      "name": "comment.line.websim",
+      "match": "\\/\\/.*"
+    },
+    {
+      "name": "variable.other.websim",
+      "match": "\\b\\w+\\b"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.websim",
+          "match": "\\b(websim\\.prompt|websim\\.loop|websim\\.event|websim\\.define)\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "keyword.function.websim",
+          "match": "\\b(websim\\.call|websim\\.generate|websim\\.set)\\b"
+        }
+      ]
+    }
+  }
+}
