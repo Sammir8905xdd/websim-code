@@ -1,0 +1,13 @@
+{
+    "iconDefinitions": {
+      "websimIcon": {
+        "iconPath": "./websim-icon.png"
+      }
+    },
+    "fileExtensions": {
+      "wss": "websimIcon"
+    },
+    "languageIds": {
+      "websim": "websimIcon"
+    }
+  }
